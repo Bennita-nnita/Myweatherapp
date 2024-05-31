@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width", initial-scale=1.0">
     <title>My weather app</title>
     <link rel="stylesheet" href="src/style.css"/>
     <link
@@ -14,14 +14,14 @@
     <div class="weather-app">
     <header>
         <form >
-        <input type="search"  placeholder="Enter a city..." required class="search-input"/>
-        <input type="submit" value="Search"  class="search-button"/>
+        <input type="search"  placeholder="Enter a city..." required class="search-input" id="search-input"/>
+        <input type="submit" value="Search"  class="search-button" id="search-button"/>
     </form>
     </header>
     <main>
         <div class="current-weather">
             <div>
-    <h1 class="current-city"> Accra</h1>
+    <h1 class="current-city" id="city"> Accra</h1>
     <p class="current-details">
         Friday 10:04, slight showers <br />
         Humidity: <strong>78%</strong>, Wind: <strong>19km/h</strong>
@@ -45,5 +45,6 @@
                  <a href="https://nnitas-weather-app.netlify.app/" target="_blank"> Netlify</a>
                 </footer>
 </div>
+<script src="src/app.js"></script>
 </body>
 </html>
