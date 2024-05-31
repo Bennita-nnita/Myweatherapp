@@ -6,6 +6,13 @@ function refreshWeather(response){
     let humidityElement = document.querySelector("#humidity");
     let windSpeedElement = document.querySelector("#wind-speed");
     let timeElement = document.querySelector("#time");
+
+    let iconElement = document.querySelector("#icon");
+    let iconUrl = response.data.condition.icon_url;
+
+    console.log("Icon URL:", iconUrl);  // Log the icon URL to the console
+
+    iconElement.innerHTML = `<span><img src="${iconUrl}" class="current-temperature-icon" alt="Weather Icon"></span>`;
     
     cityElement.innerHTML = response.data.city;
     let currentDate = new Date();
