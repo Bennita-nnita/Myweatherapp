@@ -94,7 +94,10 @@ footer {
 }
 .weather-forecast{
     margin-top: 20px;
-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    color: black;
 }
 .weather-forecast-date{
     font-size: 16px;
