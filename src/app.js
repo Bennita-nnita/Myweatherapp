@@ -79,9 +79,7 @@ function getForecast(city){
 
 
   function displayForecast(response) {
-    let forecastElement = document.querySelector("#forecast");
-
-    let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+    
     let forecastHTML = "";
 
     response.data.daily.forEach(function (day,index) 
@@ -104,7 +102,8 @@ function getForecast(city){
         </div>`;
     }
   });
-    forecastElement.innerHTML = forecastHTML;
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHTML;
 }
   
   let formElement = document.querySelector("form");
